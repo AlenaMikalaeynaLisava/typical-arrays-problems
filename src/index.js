@@ -1,9 +1,9 @@
 exports.min = function min(array) {
     if (Array.isArray(array)) {
         if (array.length !== 0) {
-            let variable = array[0];
+            let variable = +array[0];
             array.forEach((element) => {
-                if (+variable < +element) {
+                if (+variable <= +element) {
                     variable = element;
                 }
             });
@@ -15,9 +15,9 @@ exports.min = function min(array) {
 exports.max = function max(array) {
     if (Array.isArray(array)) {
         if (array.length !== 0) {
-            let variable = array[0];
+            let variable = +array[0];
             array.forEach((element) => {
-                if (+variable > +element) {
+                if (+variable >= +element) {
                     variable = element;
                 }
             });
