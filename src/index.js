@@ -1,7 +1,7 @@
 
 exports.min = function min (array) {
     if (Array.isArray(array)) {
-    if (array.length !== 0) {
+
       let variable = array[0];
   array.forEach((element) => {
     if (variable < element) {
@@ -9,7 +9,7 @@ exports.min = function min (array) {
     }
   });
   return variable;
-    } else return 0;
+
   } else return 0;
 }
 
