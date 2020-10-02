@@ -3,7 +3,7 @@ exports.min = function min(array) {
         if (array.length !== 0) {
             let variable = +array[0];
             array.forEach((element) => {
-                if (Number.isInteger(element) && +variable <= +element) {
+                if (Number.isInteger(element) && +variable >= +element) {
                     variable = element;
                 }
             });
@@ -17,7 +17,7 @@ exports.max = function max(array) {
         if (array.length !== 0) {
             let variable = +array[0];
             array.forEach((element) => {
-                if (+variable >= +element) {
+                if (+variable <= +element) {
                     variable = element;
                 }
             });
